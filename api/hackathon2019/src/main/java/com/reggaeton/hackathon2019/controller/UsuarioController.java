@@ -24,7 +24,7 @@ public class UsuarioController {
     private BuscarTodosUsuariosService buscarTodosUsuariosService;
 
     @PostMapping
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     public Usuario cadastrar(Usuario usuario) {
         return cadastrarUsuarioService.cadastrar(usuario);
     }
