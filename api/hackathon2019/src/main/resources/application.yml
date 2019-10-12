@@ -13,7 +13,9 @@ spring:
         format_sql: true
 
   datasource:
-    url: jdbc:mysql://localhost:3306/test
-    username:
+    url: jdbc:mysql://localhost:3306/hackathon2019?useTimezone=true&serverTimezone=America/Sao_Paulo
+    username: root
     password:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
