@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header } from '../../index';
 import { AutenticacaoService } from '../../../services/autenticacao.service';
 import { Redirect } from 'react-router-dom';
+import './Login.css'
 
 export class Login extends Component {
 
@@ -43,18 +44,22 @@ export class Login extends Component {
             <div>
                 <Header />
                 <div id="container">
-
+                    <div id="title-login-container">
+                        <img id="logo" src="./favicon.png" />
+                        <h2 id="title-login">Login</h2>
+                    </div>
+                    
                     <label htmlFor="input-email-signin">Email</label>
                     <input id="input-email-signin" type="text" className="form-control" name="email"
                         value={this.state.email}
                         onChange={this.handleChange} />
 
                     <label htmlFor="input-email-signin">Senha</label>
-                    <input id="input-senha-signin" type="password" name="senha"
+                    <input id="input-senha-signin" type="password" className="form-control" name="senha"
                         value={this.state.senha}
                         onChange={this.handleChange} />
 
-                    <button className="btEnviar" onClick={this.onSubmit}>Logar</button>
+                    <button className="login btn btn-success btn-lg btn-block" onClick={this.onSubmit}>Entrar</button>
                 </div>
             </div>
 
