@@ -11,7 +11,7 @@ public class Plano {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id_plano")
-    private long id;
+    private Long id;
 
     private double valor;
 

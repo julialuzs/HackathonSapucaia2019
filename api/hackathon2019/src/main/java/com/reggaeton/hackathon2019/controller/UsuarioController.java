@@ -39,7 +39,7 @@ public class UsuarioController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Usuario buscarPorId(@PathVariable("id") long id) {
+    public Usuario buscarPorId(@PathVariable("id") Long id) {
         return buscarUsuarioPorIdService.buscarPorId(id);
     }
 
@@ -49,7 +49,7 @@ public class UsuarioController {
         return buscarTodosUsuariosService.buscarTodos();
     }
 
-    @PostMapping("/editar")
+    @PutMapping("/editar")
     @ResponseStatus(HttpStatus.OK)
     public Usuario editar(@RequestBody Usuario usuario) {
         return editarUsuarioService.editar(usuario);
@@ -57,7 +57,7 @@ public class UsuarioController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deletarPorId(long id) {
+    public void deletarPorId(@PathVariable("id") Long id) {
         deletarUsuarioPorIdService.deletarPorId(id);
     }
 

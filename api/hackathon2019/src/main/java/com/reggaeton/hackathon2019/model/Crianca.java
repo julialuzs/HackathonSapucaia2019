@@ -11,7 +11,7 @@ public class Crianca {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_crianca")
-    private long id;
+    private Long id;
 
     @Column(name = "senha_crianca")
     private String senha;

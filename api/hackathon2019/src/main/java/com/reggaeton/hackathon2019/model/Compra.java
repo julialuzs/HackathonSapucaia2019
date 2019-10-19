@@ -11,7 +11,7 @@ public class Compra {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_compra")
-    private long id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "id_curso")
