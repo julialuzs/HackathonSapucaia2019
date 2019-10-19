@@ -8,19 +8,15 @@ import {Home} from './componentes/index'
 class App extends Component {
   render(){
     return (
-        
-          <Switch>
-            <Route exact path='/' component={Home} />
-            {/* <Route path='/project/:id' component={ProjectDetails} />
-            <Route path="/signin" component={SignIn} />
-            <Route path="/signup" component={SignUp} />
-            <Route path="/create" component={CreateProject} /> */}
-          </Switch>
-          
-      
+      <Switch>
+        <Route exact path='/' component={Home} />
+        {/* <Route path='/project/:id' component={ProjectDetails} />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/create" component={CreateProject} /> */}
+      </Switch>
     );
   }
-  
 }
 
 export default App;
