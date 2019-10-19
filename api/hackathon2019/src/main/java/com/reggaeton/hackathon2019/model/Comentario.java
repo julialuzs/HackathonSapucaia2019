@@ -12,11 +12,14 @@ public class Comentario {
     @Column(name = "id_comentario")
     private long id;
 
+    @Column(name = "conteudo_comentario")
     private String conteudo;
 
+    @ManyToOne
     @JoinColumn(name = "id_usuario")
     private Usuario autor;
 
+    @ManyToOne
     @JoinColumn(name = "id_aula")
     private Aula aula;
 

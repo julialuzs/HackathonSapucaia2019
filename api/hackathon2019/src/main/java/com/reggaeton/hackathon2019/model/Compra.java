@@ -2,10 +2,7 @@ package com.reggaeton.hackathon2019.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -15,12 +12,15 @@ public class Compra {
     @Column(name = "id_compra")
     private long id;
 
+    @ManyToOne
     @JoinColumn(name = "id_curso")
     private Curso curso;
 
+    @ManyToOne
     @JoinColumn(name = "id_instituicao")
     private Instituicao instituicaoASerDoada;
 
+    @ManyToOne
     @JoinColumn(name = "id_usuario")
     private Usuario cliente;
 }

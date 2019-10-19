@@ -24,7 +24,7 @@ public class Usuario {
     @Column(name="telefone_usuario")
     private String telefone;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "plano_id")
     private Plano plano;
 }
