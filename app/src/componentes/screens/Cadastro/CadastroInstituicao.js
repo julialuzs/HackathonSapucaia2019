@@ -9,6 +9,7 @@ export class CadastroInstituicao extends Component {
         super()
 
         this.state = {
+            nome: '',
             email: '',
             senha: '',
             telefone: '',
@@ -30,6 +31,7 @@ export class CadastroInstituicao extends Component {
     onSubmit = (event) => {
         event.preventDefault();
         const instituicao = {
+            nome: this.state.nome,
             email: this.state.email,
             senha: this.state.senha,
             telefone: this.state.telefone,
@@ -48,17 +50,37 @@ export class CadastroInstituicao extends Component {
                 <div id="container">
                     <h2>Crie uma nova conta!</h2>
                     <br />
-                    <label htmlFor="input-email-signup-instituicao"></label>
-                    <input id="input-email-signup-instituicao" type="text" name="email-signup"
+                    <label htmlFor="input-nome-instituicao">Nome</label>
+                    <input id="input-nome-instituicao" type="text" name="nome"
+                        value={this.state.nome}
+                        onChange={this.handleChange} />
+
+                    <label htmlFor="input-email-instituicao">E-mail</label>
+                    <input id="input-email-instituicao" type="text" name="email"
                         value={this.state.email}
                         onChange={this.handleChange} />
 
-                    <label htmlFor="input-email-signup-instituicao"></label>
-                    <input id="input-senha-signup-instituicao" type="password" name="senha-signup"
+                    <label htmlFor="input-senha-instituicao">Senha</label>
+                    <input id="input-senha-instituicao" type="password" name="senha"
                         value={this.state.senha}
                         onChange={this.handleChange} />
 
-                    <button className="btEnviar" onClick={this.onSubmit}>Logar</button>
+                    <label htmlFor="input-cnpj-instituicao">CNPJ</label>
+                    <input id="input-cnpj-instituicao" type="text" name="cnpj"
+                        value={this.state.cnpj}
+                        onChange={this.handleChange} />
+
+                    <label htmlFor="input-endereco-instituicao">Endereço</label>
+                    <input id="input-endereco-instituicao" type="text" name="endereco"
+                        value={this.state.endereco}
+                        onChange={this.handleChange} />
+                    
+                    <label htmlFor="input-telefone-instituicao">Telefone</label>
+                    <input id="input-telefone-instituicao" type="text" name="telefone"
+                        value={this.state.telefone}
+                        onChange={this.handleChange} />
+
+                    <button className="btEnviar" onClick={this.onSubmit}>Cadastrar</button>
                 </div>
             </div>
 
