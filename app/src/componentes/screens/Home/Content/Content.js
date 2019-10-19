@@ -39,9 +39,15 @@ export class Content extends Component{
 
                         <div>
                             <ul>
+                            {thumbsCurso && thumbsCurso.map(thumb=>{
+                                return (
                                     <li>
-                                        <ThumbCurso /> 
+                                        <ThumbCurso  key={thumb.id} /> 
                                     </li>
+                                
+                                )
+                            })}
+                                    
                               
                               
                             </ul>
