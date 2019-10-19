@@ -14,9 +14,9 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
 
   datasource:
-    url: jdbc:mysql://remotemysql.com:3306/g1fG2FcAud?useSSL=false
-    username: g1fG2FcAud
-    password: MC3C5sgjcK
+    url: jdbc:mysql://localhost:3306/hackathon2019?useTimezone=true&serverTimezone=America/Sao_Paulo
+    username: root
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 

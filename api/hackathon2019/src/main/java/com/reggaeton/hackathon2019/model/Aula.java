@@ -10,17 +10,17 @@ public class Aula {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id_aula")
+    @Column(name ="id_aula")
     private long id;
 
     @ManyToOne
-    @JoinColumn(name="id_curso")
+    @JoinColumn(name ="id_curso")
     private Curso curso;
 
-    @Column(name="titulo_aula")
+    @Column(name ="titulo_aula")
     private String titulo;
 
-    @Column(name="descricao_aula")
+    @Column(name ="descricao_aula")
     private String descricao;
 
     private String anexo;
