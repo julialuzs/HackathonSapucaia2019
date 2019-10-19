@@ -20,4 +20,13 @@ export class InstituicaoService extends BaseService {
                 })
     }
 
+    buscarTodos() {
+        return super.get()
+            .then(() => Promise.resolve())
+            .catch((error) => {
+                    swal.fire("Erro!", `${error}`, "error")
+                    return Promise.reject()
+                })
+    }
+
 }
