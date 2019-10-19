@@ -1,0 +1,14 @@
+#title{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: Offside;
+    padding: 50px;
+    text-shadow: 0 0 1em rgb(19, 15, 15);
+}
+
+#container{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
