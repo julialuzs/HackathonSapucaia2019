@@ -1,16 +1,19 @@
-#navbar-display{
+#navbar-display {
     display: flex !important;
     flex-direction: row !important;
 }
-.nav-link{
+
+.nav-link {
     color: white;
     text-decoration: none;
     transition: 0.2s cubic-bezier();
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(255, 208, 0);
 }
-nav{
+
+nav {
     box-shadow: 0 0 2em #1111;
     background-color: #09314d;
 }

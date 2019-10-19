@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './Instituicoes.css'
-import {Header, Footer} from '../../index'
+import { Header, Footer } from '../../index'
 
-export class Instituicoes extends Component{
-    render(){
-        return(
+export class Instituicoes extends Component {
+    render() {
+        return (
             <div>
                 <Header />
                 <Footer />

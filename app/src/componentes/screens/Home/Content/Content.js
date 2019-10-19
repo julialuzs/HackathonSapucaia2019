@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './Content.css'
-import {Carousel, Benefits} from '../../../index'
+import { Carousel, Benefits } from '../../../index'
 import { ThumbCurso } from './ThumbCurso/ThumbCurso';
 
-export class Content extends Component{
-    render(){
+export class Content extends Component {
+    render() {
         const thumbsCurso = this.props.curso
-        return(
+        return (
             <div>
                 <Carousel />
                 <Benefits />
@@ -33,17 +33,16 @@ export class Content extends Component{
                                 <li>
                                     <button type="button" onClick="" class="btn btn-outline-dark">Maquiagem</button>
                                 </li>
-                                   
+
                             </ul>
                         </div>
 
                         <div>
                             <ul>
-                                    <li>
-                                        <ThumbCurso /> 
-                                    </li>
-                              
-                              
+                                <li>
+                                    <ThumbCurso />
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -52,10 +51,9 @@ export class Content extends Component{
 
                     </div>
 
-                    
                 </div>
             </div>
-            
+
         );
     }
 }
