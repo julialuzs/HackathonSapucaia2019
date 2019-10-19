@@ -20,6 +20,7 @@ public class Necessidade {
     private int quantidade;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "status_necessidade")
     private StatusNecessidade status;
 
     @ManyToOne

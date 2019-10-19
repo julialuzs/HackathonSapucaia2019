@@ -1,6 +1,7 @@
 -- Geração de Modelo físic,
 -- Sql ANSI 2003 - brModelo.
 
+
 create database hackathon2019;
 use hackathon2019;
 
@@ -32,7 +33,7 @@ email_usuario VARCHAR(50) NOT NULL,
 id_usuario BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 senha_usuario VARCHAR(255) NOT NULL,
 nome_usuario VARCHAR(255) NOT NULL,
-id_plano BIGINT NOT NULL,
+id_plano BIGINT,
 FOREIGN KEY(id_plano) REFERENCES plano (id_plano)
 );
 
