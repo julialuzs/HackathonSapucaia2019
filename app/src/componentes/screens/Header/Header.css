@@ -2,3 +2,12 @@
     display: flex !important;
     flex-direction: row !important;
 }
+.register{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s cubic-bezier();
+}
+nav{
+    box-shadow: 0 0 2em #1111;
+    background-color: #09314d;
+}
