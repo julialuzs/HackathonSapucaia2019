@@ -43,8 +43,9 @@ export class Login extends Component {
             <div>
                 <Header />
                 <div id="container">
+
                     <label htmlFor="input-email-signin">Email</label>
-                    <input id="input-email-signin" type="text" name="email"
+                    <input id="input-email-signin" type="text" className="form-control" name="email"
                         value={this.state.email}
                         onChange={this.handleChange} />
 
