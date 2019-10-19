@@ -9,6 +9,7 @@ import javax.persistence.*;
 public class Usuario {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private long id;
 
@@ -25,6 +26,6 @@ public class Usuario {
     private String telefone;
 
     @ManyToOne
-    @JoinColumn(name = "plano_id")
+    @JoinColumn(name = "id_plano")
     private Plano plano;
 }

@@ -10,6 +10,7 @@ import java.time.LocalDate;
 public class Curso {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_curso")
     private long id;
 

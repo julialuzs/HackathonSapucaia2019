@@ -10,6 +10,7 @@ import javax.persistence.*;
 public class AulasAssistidas {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_aulas_assistidas")
     private long id;
 

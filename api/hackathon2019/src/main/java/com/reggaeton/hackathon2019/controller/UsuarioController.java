@@ -1,6 +1,7 @@
 package com.reggaeton.hackathon2019.controller;
 
 import com.reggaeton.hackathon2019.model.Usuario;
+import com.reggaeton.hackathon2019.service.DeletarUsuarioPorIdService;
 import com.reggaeton.hackathon2019.service.EditarUsuarioService;
 import com.reggaeton.hackathon2019.service.usuario.BuscarTodosUsuariosService;
 import com.reggaeton.hackathon2019.service.usuario.BuscarUsuarioPorIdService;
@@ -27,9 +28,12 @@ public class UsuarioController {
     @Autowired
     private BuscarTodosUsuariosService buscarTodosUsuariosService;
 
+    @Autowired
+    private DeletarUsuarioPorIdService deletarUsuarioPorIdService;
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Usuario cadastrar(Usuario usuario) {
+    public Usuario cadastrar(@RequestBody Usuario usuario) {
         return cadastrarUsuarioService.cadastrar(usuario);
     }
 
@@ -45,10 +49,16 @@ public class UsuarioController {
         return buscarTodosUsuariosService.buscarTodos();
     }
 
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public Usuario editar(Usuario usuario) {
-        return cadastrarUsuarioService.cadastrar(usuario);
+    @PostMapping("/editar")
+    @ResponseStatus(HttpStatus.OK)
+    public Usuario editar(@RequestBody Usuario usuario) {
+        return editarUsuarioService.editar(usuario);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deletarPorId(long id) {
+        deletarUsuarioPorIdService.deletarPorId(id);
     }
 
 }
