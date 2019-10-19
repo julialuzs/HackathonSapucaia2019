@@ -32,6 +32,7 @@ export class Carousel extends Component {
                         <span className="sr-only">Next</span>
                     </a>
                 </ div>
+            </ div>
             </div>
         );
     }

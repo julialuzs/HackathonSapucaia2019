@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import './Content.css'
-<<<<<<< HEAD
 import { Benefits} from '../../../index'
-=======
-import { Carousel, Benefits } from '../../../index'
->>>>>>> f33ad6b888d8fd126d0e8892d93ab2d66ce140c8
 import { ThumbCurso } from './ThumbCurso/ThumbCurso';
 
 export class Content extends Component {
