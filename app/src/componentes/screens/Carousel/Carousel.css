@@ -7,7 +7,7 @@
     text-shadow: 0 0 1em rgb(19, 15, 15);
 }
 
-#container{
+#carousel-container{
     display: flex;
     position: relative;
     align-items: center;
