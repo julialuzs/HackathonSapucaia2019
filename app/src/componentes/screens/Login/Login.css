@@ -1,9 +1,9 @@
 
-.login.btn{
+.auth.btn{
     margin-top: 25px;
 }
 
-#title-login-container{
+#title-auth-container{
     width: 100%;
     justify-content: center;
     display: flex;

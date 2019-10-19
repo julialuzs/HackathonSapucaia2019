@@ -44,9 +44,9 @@ export class Login extends Component {
             <div>
                 <Header />
                 <div id="container">
-                    <div id="title-login-container">
+                    <div id="title-auth-container">
                         <img id="logo" src="./favicon.png" />
-                        <h2 id="title-login">Login</h2>
+                        <h2 id="title-auth">Login</h2>
                     </div>
                     
                     <label htmlFor="input-email-signin">Email</label>
@@ -59,7 +59,7 @@ export class Login extends Component {
                         value={this.state.senha}
                         onChange={this.handleChange} />
 
-                    <button className="login btn btn-success btn-lg btn-block" onClick={this.onSubmit}>Entrar</button>
+                    <button className="auth btn btn-success btn-lg btn-block btEnviar" onClick={this.onSubmit}>Entrar</button>
                 </div>
             </div>
 

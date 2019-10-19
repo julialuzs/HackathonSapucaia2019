@@ -8,7 +8,11 @@ export class Cadastro extends Component {
             <div>
                 <Header />
                 <div id="container">
-                    <h2>Crie uma nova conta!</h2>
+                    <div id="title-auth-container">
+                        <img id="logo" src="./favicon.png" />
+                        <h2 id="title-auth">Crie uma nova conta!</h2>
+                    </div>
+                    
                     <br />
                     <a href="/signup/instituicao"><button type="button" class="btn btn-outline-warning btn-lg btn-block">Sou uma instituição!</button></a>
                     <h5>Busco visibilidade para a rede em que operamos. Além de doações voluntárias a fim de adquirir recursos.</h5>
