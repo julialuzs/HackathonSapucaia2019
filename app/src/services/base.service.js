@@ -1,4 +1,4 @@
-import axios from 'axios'
+/* import axios from 'axios'
 import { SweetAlert } from '../componentes/index'
 
 const MSG_ERRO_PADRAO = "Não foi possivel completar a ação desejada."
@@ -61,3 +61,4 @@ export class BaseService {
         return result
     }
 }
+ */

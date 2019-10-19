@@ -6,8 +6,12 @@ export class Carousel extends Component {
       return (
         <div id="carousel-container">
             <div id="title">
-                <h1>DoAmpharo</h1>
-                <h4>Ensine, Aprenda e Doe.</h4>
+                <img id="logo" src="./img/icon.png" />
+                <div>
+                    <h1>DoAmpharo</h1>
+                    <h4>Ensine, Aprenda, Doe. < br /> Promova novos futuros.</h4>
+                </div>
+                
             </div>
             
             <div id="myCarousel" className="carousel slide" data-ride="carousel">

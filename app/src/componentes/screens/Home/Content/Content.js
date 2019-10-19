@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Content.css'
 import { Benefits} from '../../../index'
 import { ThumbCurso } from './ThumbCurso/ThumbCurso';
+import { InstituicoesExemplo } from '../../../index'
 
 export class Content extends Component {
 
@@ -20,7 +21,7 @@ export class Content extends Component {
                 
                 <Benefits />
                 <div id="content-body">
-                    <div className="half-content">
+                    <div id="content-container">
                         <div id="categorias">
                             <h2>Categorias mais visitadas</h2>
                             <ul id="lista-categorias">
@@ -53,9 +54,7 @@ export class Content extends Component {
                         </div>
                     </div>
 
-                    <div className="half-content">
-
-                    </div>
+                    <InstituicoesExemplo />
 
                 </div>
             </div>

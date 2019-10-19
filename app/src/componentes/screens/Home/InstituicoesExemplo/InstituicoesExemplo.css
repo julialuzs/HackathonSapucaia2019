@@ -1,0 +1,17 @@
+#instituicoes-exemplo{
+    height: fit-content;
+    padding: 40px;
+    width: 100%;
+    background-color: #09314d;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: Lato;
+    flex-wrap: wrap;
+}
+
+#instituicoes-exemplo-title{
+    color: white;
+    text-align: right;
+    width: 100%;
+}
