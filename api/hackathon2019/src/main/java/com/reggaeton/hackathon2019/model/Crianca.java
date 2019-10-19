@@ -2,10 +2,7 @@ package com.reggaeton.hackathon2019.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -20,6 +17,7 @@ public class Crianca {
 
     private String matricula;
 
+    @ManyToOne
     @JoinColumn(name = "id_instituicao")
     private Instituicao instituicao;
 }

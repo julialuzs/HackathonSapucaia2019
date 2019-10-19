@@ -2,18 +2,17 @@ package com.reggaeton.hackathon2019.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import java.io.File;
+import javax.persistence.*;
 
-@Entity
 @Data
+@Entity
 public class Aula {
 
+    @Id
     @Column(name="id_aula")
     private long id;
 
+    @ManyToOne
     @JoinColumn(name="id_curso")
     private Curso curso;
 
@@ -23,7 +22,7 @@ public class Aula {
     @Column(name="descricao_aula")
     private String descricao;
 
-    private File anexo;
+    private String anexo;
     private String conteudo;
 
 }

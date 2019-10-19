@@ -1,6 +1,7 @@
 package com.reggaeton.hackathon2019.controller;
 
 import com.reggaeton.hackathon2019.model.Usuario;
+import com.reggaeton.hackathon2019.service.EditarUsuarioService;
 import com.reggaeton.hackathon2019.service.usuario.BuscarTodosUsuariosService;
 import com.reggaeton.hackathon2019.service.usuario.BuscarUsuarioPorIdService;
 import com.reggaeton.hackathon2019.service.usuario.CadastrarUsuarioService;
@@ -16,6 +17,9 @@ public class UsuarioController {
 
     @Autowired
     private CadastrarUsuarioService cadastrarUsuarioService;
+
+    @Autowired
+    private EditarUsuarioService editarUsuarioService;
 
     @Autowired
     private BuscarUsuarioPorIdService buscarUsuarioPorIdService;
@@ -39,6 +43,12 @@ public class UsuarioController {
     @ResponseStatus(HttpStatus.OK)
     public List<Usuario> buscarTodos() {
         return buscarTodosUsuariosService.buscarTodos();
+    }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public Usuario editar(Usuario usuario) {
+        return cadastrarUsuarioService.cadastrar(usuario);
     }
 
 }

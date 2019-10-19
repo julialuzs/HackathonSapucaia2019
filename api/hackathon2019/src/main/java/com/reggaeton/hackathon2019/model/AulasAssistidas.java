@@ -2,21 +2,25 @@ package com.reggaeton.hackathon2019.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity
 @Data
+@Entity
+@Table(name = "aulas_assistidas")
 public class AulasAssistidas {
 
     @Id
     @Column(name = "id_aulas_assistidas")
     private long id;
 
-    @Column(name = "id_aula")
+    @ManyToOne
+    @JoinColumn(name = "id_aula")
     private Aula aula;
 
-    @Column(name = "id_usuario")
+    @ManyToOne
+    @JoinColumn(name = "id_usuario")
     private Usuario usuario;
+
+    //uma aula é assistida por N usuarios, cada usuario assiste n aulas
+    //
 }
