@@ -10,7 +10,7 @@ export class InstituicoesExemplo extends Component {
                 <div id="instituicoes-exemplo-galeria">
 
                     <div class="instituicoes-exemplo card">
-                        <img class="card-img-top" src="./img/4.png" alt="Card cap" />
+                        <img class="card-img-top" src="..." alt="Card cap" src="./img/4.jpg" />
                         <div class="card-body">
                             <h5 class="card-title">Instituição 01</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum eros eu augue porta hendrerit. Etiam maximus finibus suscipit.</p>
@@ -19,7 +19,7 @@ export class InstituicoesExemplo extends Component {
                     </div>
 
                     <div class="instituicoes-exemplo card ">
-                        <img class="card-img-top" src="..." alt="Card cap" />
+                        <img class="card-img-top" src="./img/5.jpg" alt="Card cap" />
                         <div class="card-body">
                             <h5 class="card-title">Instituição 02</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum eros eu augue porta hendrerit. Etiam maximus finibus suscipit.</p>
@@ -28,7 +28,7 @@ export class InstituicoesExemplo extends Component {
                     </div>
 
                     <div class="instituicoes-exemplo card">
-                        <img class="card-img-top" src="..." alt="Card cap" />
+                        <img class="card-img-top" src="./img/6.jpg" alt="Card cap" />
                         <div class="card-body">
                             <h5 class="card-title">Instituição 03</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum eros eu augue porta hendrerit. Etiam maximus finibus suscipit.</p>
@@ -37,13 +37,14 @@ export class InstituicoesExemplo extends Component {
                     </div>
 
                     <div class="instituicoes-exemplo card ">
-                        <img class="card-img-top" src="..." alt="Card cap" />
+                        <img class="card-img-top" src="./img/8.jpg" alt="Card cap" />
                         <div class="card-body">
                             <h5 class="card-title">Instituição 04</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum eros eu augue porta hendrerit. Etiam maximus finibus suscipit.</p>
                             <button type="button" class="btn btn-warning">Saiba Mais</button>
                         </div>
                     </div>
+
                 </div>
             </div>
         );

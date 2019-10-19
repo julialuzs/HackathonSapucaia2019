@@ -26,22 +26,22 @@ export class Conteudo extends Component {
                             <h2>Categorias mais visitadas</h2>
                             <ul id="lista-categorias">
                                 <li>
-                                    <button type="button" onClick="" class="active btn btn-outline-dark">Design Gráfico</button>
+                                    <button type="button"  class="btn btn-outline-dark">Design Gráfico</button>
                                 </li>
                                 <li>
-                                    <button type="button" onClick="" class="btn btn-outline-dark">Matemática</button>
+                                    <button type="button"  class="btn btn-outline-dark active">Matemática</button>
                                 </li>
                                 <li>
-                                    <button type="button" onClick="" class="btn btn-outline-dark">Modelagem 3D</button>
+                                    <button type="button"  class="btn btn-outline-dark">Modelagem 3D</button>
                                 </li>
                                 <li>
-                                    <button type="button" onClick="" class="btn btn-outline-dark">Arquitetura</button>
+                                    <button type="button"  class="btn btn-outline-dark">Arquitetura</button>
                                 </li>
                                 <li>
-                                    <button type="button" onClick="" class="btn btn-outline-dark">Desenvolvimento</button>
+                                    <button type="button"  class="btn btn-outline-dark">Desenvolvimento</button>
                                 </li>
                                 <li>
-                                    <button type="button" onClick="" class="btn btn-outline-dark">Maquiagem</button>
+                                    <button type="button"  class="btn btn-outline-dark">Maquiagem</button>
                                 </li>
 
                             </ul>
@@ -50,6 +50,7 @@ export class Conteudo extends Component {
                         <div>
                             <ul id="lista-cursos">
                                 {this.renderThumbCurso()}
+                                <li><ThumbCurso /></li>
                             </ul>
                         </div>
                     </div>
