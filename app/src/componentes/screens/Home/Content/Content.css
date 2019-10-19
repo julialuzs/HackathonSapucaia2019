@@ -2,8 +2,10 @@
     width: 100%;
     height: fit-content;
     background-color: rgb(224, 224, 224);
-    padding: 40px;
     
+}
+#content-container{
+padding: 40px;
 }
 
 ul{

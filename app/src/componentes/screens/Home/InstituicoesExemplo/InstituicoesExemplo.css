@@ -1,0 +1,37 @@
+#instituicoes-exemplo{
+    height: fit-content;
+    padding: 40px;
+    width: 100%;
+    background-color: #09314d;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: Lato;
+    flex-wrap: wrap;
+}
+
+#instituicoes-exemplo-galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#instituicoes-exemplo-title{
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.instituicoes-exemplo.card{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+#hr{
+    border: .5px solid #b3b3b3;
+    width: 100%;
+    margin-bottom: 20px;
+}
