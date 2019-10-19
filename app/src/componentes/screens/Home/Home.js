@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {Header, Carousel, Benefits} from '../../index'
+import {Header, Footer, Content} from '../../index'
 
 export class Home extends Component {
     render(){
       return (
         <div>
             <Header />
-            <Carousel />
-            <Benefits />
+            <Content />
+            <Footer />
         </div>
         
       );
