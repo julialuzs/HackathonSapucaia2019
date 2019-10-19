@@ -2,15 +2,14 @@ package com.reggaeton.hackathon2019.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
 public class Plano {
 
     @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id_plano")
     private long id;
 

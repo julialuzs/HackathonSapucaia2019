@@ -9,6 +9,7 @@ import javax.persistence.*;
 public class Necessidade {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_necessidade")
     private long id;
 
@@ -19,7 +20,7 @@ public class Necessidade {
     private int quantidade;
 
     @Enumerated(EnumType.STRING)
-    private StatusNecessidade statusNecessidade;
+    private StatusNecessidade status;
 
     @ManyToOne
     @JoinColumn(name = "id_instituicao")
