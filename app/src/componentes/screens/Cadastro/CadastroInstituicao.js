@@ -48,7 +48,10 @@ export class CadastroInstituicao extends Component {
             <div>
                 <Header />
                 <div id="container">
-                    <h2>Crie uma nova conta!</h2>
+                    <div id="title-auth-container">
+                        <img id="logo" src="./favicon.png" />
+                        <h2 id="title-auth">Cadastre sua Instituição!</h2>
+                    </div>
                     <br />
                     <label htmlFor="input-nome-instituicao">Nome</label>
                     <input id="input-nome-instituicao" type="text" name="nome"
