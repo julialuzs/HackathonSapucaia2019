@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import './Content.css'
-import { Benefits} from '../../../index'
+import React, { Component } from 'react';
+import './Conteudo.css';
+import { Beneficios } from '../../../index';
 import { ThumbCurso } from './ThumbCurso/ThumbCurso';
 import { InstituicoesExemplo } from '../../../index'
 
-export class Content extends Component {
+export class Conteudo extends Component {
 
     renderThumbCurso() {
 
@@ -19,7 +19,7 @@ export class Content extends Component {
         return (
             <div>
                 
-                <Benefits />
+                <Beneficios />
                 <div id="content-body">
                     <div id="content-container">
                         <div id="categorias">

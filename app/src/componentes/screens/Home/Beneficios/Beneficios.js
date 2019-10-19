@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Benefits.css'
+import './Beneficios.css'
 
-export class Benefits extends Component {
+export class Beneficios extends Component {
     render() {
         return (
             <div id="benefits">
