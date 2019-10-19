@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Instituicoes.css'
 import { Header, Footer } from '../../index'
 import { InstituicaoService } from '../../../services/instituicao.service'
+import {instituicao} from './Instituicao'
 
 export class Instituicoes extends Component {
 
@@ -31,14 +32,18 @@ export class Instituicoes extends Component {
     }
     render() {
         return (
-            <div>
-                <Header />
-                {/* {
-                   this.state.instituicoes && this.state.instituicoes.map
-                } */}
-
+           <div>
+               <Header />
+               <div className="project-list section">
+                    {this.state.instituicoes && this.state.instituicoes.map(instituicao=>{
+                        return (
+                            <Instituicao instituicao={instituicao} key={instituicao.id} />
+                        )
+                    })}
+                </div>
                 <Footer />
-            </div>
+           </div>
+            
         )
     }
 }
