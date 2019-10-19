@@ -1,7 +1,10 @@
 -- Geração de Modelo físico
 -- Sql ANSI 2003 - brModelo.
 
+create database hackathon2019;
+use hackathon2019;
 
+drop database hackathon2019;
 
 CREATE TABLE plano (
 valor DOUBLE,
@@ -47,7 +50,7 @@ cnpj VARCHAR(50)
 );
 
 CREATE TABLE necessidade (
-quantidade BIGINT,
+quantidade int,
 valor_unitario DOUBLE,
 id_necessidade BIGINT AUTO_INCREMENT PRIMARY KEY,
 status VARCHAR(20),
@@ -66,7 +69,7 @@ titulo_curso VARCHAR(50),
 descricao_curso VARCHAR(255)
 );
 
-CREATE TABLE comenta (
+CREATE TABLE comentario (
 id_comentario BIGINT AUTO_INCREMENT PRIMARY KEY,
 conteudo_comentario VARCHAR(255),
 id_usuario BIGINT,
