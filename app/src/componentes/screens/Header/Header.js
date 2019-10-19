@@ -5,11 +5,14 @@ export class Header extends Component{
     render(){
         return(
             <nav className="navbar navbar-dark" >
-                <a className="navbar-brand" href="#">Ampharo</a>
-                
-                <div id="navbar-right">
-                    <a className="register nav-link mr-sm-2" href="#">Registrar</a>
-                    <button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Entrar</button>
+                <div id="navbar-display">
+                    <a className="navbar-brand" href="/">DoAmpharo</a>
+                    <a class="nav-link" href="/instituicoes">Instituições <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/cursos">Cursos <span class="sr-only">(current)</span></a>
+                </div>
+                <div id="navbar-display">
+                    <a className="nav-link mr-sm-2" href="/signup">Registrar</a>
+                    <a  href="/signup" ><button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Entrar</button></a> 
                 </div>
                 
             </nav>

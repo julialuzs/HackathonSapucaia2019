@@ -1,11 +1,14 @@
-#navbar-right{
+#navbar-display{
     display: flex !important;
     flex-direction: row !important;
 }
-.register{
+.nav-link{
     color: white;
     text-decoration: none;
     transition: 0.2s cubic-bezier();
+}
+.nav-link:hover{
+    color: rgb(255, 208, 0);
 }
 nav{
     box-shadow: 0 0 2em #1111;

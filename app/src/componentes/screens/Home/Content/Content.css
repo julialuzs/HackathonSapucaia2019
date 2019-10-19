@@ -1,0 +1,27 @@
+#content-body{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(224, 224, 224);
+    padding: 40px;
+    
+}
+
+ul{
+    list-style-type: none !important;
+    padding-inline-start: 0;
+}
+
+#lista-categorias
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-inline-start: 0;
+}
+#lista-categorias > li{
+    padding: 10px;
+}
+
+.half-content{
+    width: 46%;
+}
