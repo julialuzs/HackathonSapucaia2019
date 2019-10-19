@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import './Carousel.css'
+
 export class Carousel extends Component {
     render(){
       return (
         <div id="container">
             <div id="title">
-                <h1>Hackathon</h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ligula non ex commodo faucibus a quis diam. Maecenas libero lorem, consectetur vel felis ut, finibus commodo diam.</h4>
+                <h1>DoAmpharo</h1>
+                <h4>Plataforma de alaallalalaalalalla.</h4>
             </div>
             
             <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -27,10 +28,6 @@ export class Carousel extends Component {
                     </ div>
                 </ div>
 
-                <a className="left carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
-                </a>
                 <a className="right carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>

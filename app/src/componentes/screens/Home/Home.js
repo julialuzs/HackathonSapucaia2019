@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Header, Carousel} from '../../index'
+import {Header, Carousel, Benefits} from '../../index'
 
 export class Home extends Component {
     render(){
@@ -7,6 +7,7 @@ export class Home extends Component {
         <div>
             <Header />
             <Carousel />
+            <Benefits />
         </div>
         
       );
