@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Plano {
 
     @Id
-    @Column(name="id_plano")
+    @Column(name = "id_plano")
     private long id;
 
     private double valor;

@@ -28,4 +28,6 @@ public class Instituicao {
 
     private String cnpj;
     private String endereco;
+    private String site;
+
 }
