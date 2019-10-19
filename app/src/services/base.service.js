@@ -1,7 +1,5 @@
 import axios from 'axios'
-import { AutenticacaoService } from '../autenticacao/autenticacao.service'
-import { SweetAlert } from '../../components/index'
-
+import { SweetAlert } from '../componentes/index'
 const CLASS_LOADER = 'loader'
 
 const MSG_ERRO_PADRAO = "Não foi possivel completar a ação desejada."

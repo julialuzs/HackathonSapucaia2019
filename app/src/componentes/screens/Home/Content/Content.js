@@ -49,7 +49,6 @@ export class Content extends Component {
                         <div>
                             <ul>
                                 {this.renderThumbCurso()}
-
                             </ul>
                         </div>
                     </div>

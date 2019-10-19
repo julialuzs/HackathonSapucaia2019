@@ -1,4 +1,5 @@
-import { BaseService } from '../base.service/base.service'
+import { BaseService } from "./base.service"
+
 const URL_BACKEND = 'localhost:8081'
 export class UsuarioService extends BaseService {
 
