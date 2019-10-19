@@ -1,6 +1,6 @@
 /* import { BaseService } from "./base.service"
 
-const URL_BACKEND = 'localhost:8081'
+const URL_BACKEND = 'https://localhost:8081'
 
 export class InstituicaoService extends BaseService {
 

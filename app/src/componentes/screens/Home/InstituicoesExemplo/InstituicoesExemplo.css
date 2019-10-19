@@ -10,8 +10,28 @@
     flex-wrap: wrap;
 }
 
+#instituicoes-exemplo-galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #instituicoes-exemplo-title{
     color: white;
-    text-align: right;
+    text-align: center;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.instituicoes-exemplo.card{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+#hr{
+    border: .5px solid #b3b3b3;
+    width: 100%;
+    margin-bottom: 20px;
 }

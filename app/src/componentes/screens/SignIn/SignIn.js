@@ -32,8 +32,7 @@ export class SignIn extends Component {
             email: this.state.email,
             senha: this.state.senha
         }
-        this.autenticacaoService.logar(loginRequest)
-            .then((usuarioLogado) => this.setState({ shouldGoToHome: true, usuarioLogado: usuarioLogado }));
+        this.autenticacaoService.logar(loginRequest).then(() => this.setState({shouldGoToHome: true}));
     }
 
     render() {
@@ -45,17 +44,16 @@ export class SignIn extends Component {
                 <Header />
                 <div id="container">
                     <label htmlFor="input-email-signin">Email</label>
-                    <input id="input-email-signin" type="text" name="email-signin"
+                    <input id="input-email-signin" type="text" name="email"
                         value={this.state.email}
                         onChange={this.handleChange} />
 
                     <label htmlFor="input-email-signin">Senha</label>
-                    <input id="input-senha-signin" type="password" name="senha-signin"
+                    <input id="input-senha-signin" type="password" name="senha"
                         value={this.state.senha}
                         onChange={this.handleChange} />
 
                     <button className="btEnviar" onClick={this.onSubmit}>Logar</button>
-
                 </div>
             </div>
 

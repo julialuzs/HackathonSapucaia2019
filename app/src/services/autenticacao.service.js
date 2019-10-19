@@ -1,6 +1,7 @@
-/* import { BaseService } from "./base.service"
+import { BaseService } from "./base.service"
+import swal from 'sweetalert2';
 
-const URL_BACKEND = 'localhost:8081'
+const URL_BACKEND = 'https://localhost:8081'
 
 export class AutenticacaoService extends BaseService {
 
@@ -8,10 +9,14 @@ export class AutenticacaoService extends BaseService {
         super(`${URL_BACKEND}/autenticacao`)
     }
 
-    async logar(loginRequest) {
-        const result = await super.post('/login', loginRequest)
-        return result.data
+    logar(loginRequest) {
+        return super.get(`/login?email=${loginRequest.email}&senha=${loginRequest.senha}`)
+            .then()
+            .catch(
+                (error) => {
+                    swal.fire("Erro!", `${error}`, "error")
+                    return Promise.reject()
+                })
     }
 
 }
- */
