@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Carousel.css'
 
 export class Carousel extends Component {
@@ -26,16 +26,13 @@ export class Carousel extends Component {
                     <div className="carousel-item">
                         <img src="./img/3.png" className="d-block w-100" alt="..." />
                     </ div>
-                </ div>
 
-                <a className="right carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
-                </a>
-            </ div>
-        </div>
-        
-        
-      );
-    }  
+                    <a className="right carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
+                </ div>
+            </div>
+        );
+    }
 }

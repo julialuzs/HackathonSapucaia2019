@@ -1,12 +1,25 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './Content.css'
+<<<<<<< HEAD
 import { Benefits} from '../../../index'
+=======
+import { Carousel, Benefits } from '../../../index'
+>>>>>>> f33ad6b888d8fd126d0e8892d93ab2d66ce140c8
 import { ThumbCurso } from './ThumbCurso/ThumbCurso';
 
-export class Content extends Component{
-    render(){
+export class Content extends Component {
+
+    renderThumbCurso() {
+
         const thumbsCurso = this.props.curso
-        return(
+        thumbsCurso && thumbsCurso.map(thumb => {
+            return (
+                <li><ThumbCurso key={thumb.id} /></li>
+            )
+        })
+    }
+    render() {
+        return (
             <div>
                 
                 <Benefits />
@@ -33,26 +46,13 @@ export class Content extends Component{
                                 <li>
                                     <button type="button" onClick="" class="btn btn-outline-dark">Maquiagem</button>
                                 </li>
-                                   
+
                             </ul>
                         </div>
 
                         <div>
                             <ul id="lista-cursos">
-                            
-                                <li>
-                                    <ThumbCurso  /> 
-                                </li>
-                                <li>
-                                    <ThumbCurso  /> 
-                                </li>
-                                <li>
-                                    <ThumbCurso  /> 
-                                </li>
-                                <li>
-                                    <ThumbCurso  /> 
-                                </li>
-                                
+                                {this.renderThumbCurso()}
                             </ul>
                         </div>
                     </div>
@@ -61,10 +61,9 @@ export class Content extends Component{
 
                     </div>
 
-                    
                 </div>
             </div>
-            
+
         );
     }
 }

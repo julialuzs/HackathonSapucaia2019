@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 export class ThumbCurso extends Component{
     render(){
@@ -11,7 +11,7 @@ export class ThumbCurso extends Component{
                     <a href="#" className="btn btn-warning">Confira</a>
                 </div>
             </div>
-            
+
         );
     }
 }

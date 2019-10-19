@@ -8,18 +8,17 @@ class App extends Component {
   render(){
     return (
         
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route  path='/instituicoes' component={Instituicoes} />
-            <Route path="/signin" component={SignIn} />
-            <Route path="/signup" component={SignUp} />
-            <Route path="/signup/instituicao" component={SignupInstituicao} />
-            <Route path="/signup/user" component={SignupUser} />
-            {/* <Route path="/create" component={CreateProject} />
-            <Route path='/project/:id' component={ProjectDetails} /> */}
-          </Switch>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route  path='/instituicoes' component={Instituicoes} />
+        <Route path="/signin" component={SignIn} exact/>
+        <Route path="/signup" component={SignUp} exact/>
+        <Route path="/signup/instituicao" component={SignupInstituicao} />
+        <Route path="/signup/user" component={SignupUser} />
+        {/* <Route path="/create" component={CreateProject} />
+        <Route path='/project/:id' component={ProjectDetails} /> */}
+      </Switch>
           
-      
     );
   }
 }

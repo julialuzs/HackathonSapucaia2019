@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './Benefits.css'
 
-export class Benefits extends Component{
-    render(){
-        return(
+export class Benefits extends Component {
+    render() {
+        return (
             <div id="benefits">
                 <div className="benefit">
                 <img src="https://img.icons8.com/dusk/64/000000/receive-cash.png" />
