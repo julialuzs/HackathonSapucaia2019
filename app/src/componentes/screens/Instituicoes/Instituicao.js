@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
 import './Instituicoes.css'
-import { Header, Footer } from '../../index'
 
-export class Instituicoes extends Component {
-    
+export class Instituicao extends Component {
+
     render() {
+        const { nome, telefone, endereco, email } = this.props.instituicao
         return (
-            <div>
-                <h2>this.props.nome</h2>
+            <div id="container">
                 <div>
-                    <p>this.props.telefone</p>
-                    <p>this.props.endereco</p>
-                    <p>this.props.email</p>
+                    <img class="card-img-top" src="..." alt="Card cap" src="./img/4.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title">{nome}</h5>
+                        <p class="card-text">{telefone}</p>
+                        <p class="card-text">{email}</p>
+                        <p class="card-text">{endereco}</p>
+                        <button type="button" class="btn btn-warning">Saiba Mais</button>
+                    </div>
                 </div>
             </div>
         )

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Instituicoes.css'
 import { Header, Footer } from '../../index'
 import { InstituicaoService } from '../../../services/instituicao.service'
-import {instituicao} from './Instituicao'
+import { Instituicao } from './Instituicao'
 
 export class Instituicoes extends Component {
 
