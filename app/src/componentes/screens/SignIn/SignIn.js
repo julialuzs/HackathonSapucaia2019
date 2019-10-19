@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import { Header } from '../../index'
+import React, { Component } from 'react';
+import { Header } from '../../index';
 import { AutenticacaoService } from '../../../services/autenticacao.service';
+import { Redirect } from 'react-router-dom';
 
 export class SignIn extends Component {
 
@@ -10,7 +11,8 @@ export class SignIn extends Component {
         this.state = {
             senha: '',
             email: '',
-            shouldGoToHome: false
+            shouldGoToHome: false,
+            usuarioLogado: ''
         }
 
         this.autenticacaoService = new AutenticacaoService();
@@ -31,20 +33,23 @@ export class SignIn extends Component {
             senha: this.state.senha
         }
         this.autenticacaoService.logar(loginRequest)
-            .then(() => this.setState({ shouldGoToHome: true }));
+            .then((usuarioLogado) => this.setState({ shouldGoToHome: true, usuarioLogado: usuarioLogado }));
     }
 
     render() {
+        if (this.state.shouldGoToHome) {
+            return <Redirect to='/'></Redirect>
+        }
         return (
             <div>
                 <Header />
                 <div id="container">
-                    <label htmlFor="input-email-signin"></label>
+                    <label htmlFor="input-email-signin">Email</label>
                     <input id="input-email-signin" type="text" name="email-signin"
                         value={this.state.email}
                         onChange={this.handleChange} />
 
-                    <label htmlFor="input-email-signin"></label>
+                    <label htmlFor="input-email-signin">Senha</label>
                     <input id="input-senha-signin" type="password" name="senha-signin"
                         value={this.state.senha}
                         onChange={this.handleChange} />

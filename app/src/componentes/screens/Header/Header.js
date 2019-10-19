@@ -12,7 +12,7 @@ export class Header extends Component {
                 </div>
                 <div id="navbar-display">
                     <a className="nav-link mr-sm-2" href="/signup">Registrar</a>
-                    <a href="/signup" ><button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Entrar</button></a>
+                    <a href="/signin" ><button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Entrar</button></a>
                 </div>
 
             </nav>
