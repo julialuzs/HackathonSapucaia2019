@@ -4,10 +4,10 @@ import './Carousel.css'
 export class Carousel extends Component {
     render(){
       return (
-        <div id="container">
+        <div id="carousel-container">
             <div id="title">
                 <h1>DoAmpharo</h1>
-                <h4>Plataforma de alaallalalaalalalla.</h4>
+                <h4>Ensine, Aprenda e Doe.</h4>
             </div>
             
             <div id="myCarousel" className="carousel slide" data-ride="carousel">

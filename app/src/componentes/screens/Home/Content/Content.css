@@ -18,10 +18,14 @@ flex-direction: row;
 flex-wrap: wrap;
 padding-inline-start: 0;
 }
+
 #lista-categorias > li{
     padding: 10px;
 }
 
-.half-content{
-    width: 46%;
+#lista-cursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
