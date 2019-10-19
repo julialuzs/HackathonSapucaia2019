@@ -4,8 +4,17 @@ import { Carousel, Benefits } from '../../../index'
 import { ThumbCurso } from './ThumbCurso/ThumbCurso';
 
 export class Content extends Component {
-    render() {
+
+    renderThumbCurso() {
+
         const thumbsCurso = this.props.curso
+        thumbsCurso && thumbsCurso.map(thumb => {
+            return (
+                <li><ThumbCurso key={thumb.id} /></li>
+            )
+        })
+    }
+    render() {
         return (
             <div>
                 <Carousel />
@@ -39,9 +48,7 @@ export class Content extends Component {
 
                         <div>
                             <ul>
-                                <li>
-                                    <ThumbCurso />
-                                </li>
+                                {this.renderThumbCurso()}
 
                             </ul>
                         </div>
