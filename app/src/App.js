@@ -8,7 +8,7 @@ class App extends Component {
         
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route  path='/instituicoes' component={Instituicoes} />
+        <Route path='/instituicoes' component={Instituicoes} />
         <Route path="/signin" component={Login} exact/>
         <Route path="/signup" component={Cadastro} exact/>
         <Route path="/signup/instituicao" component={CadastroInstituicao} />
