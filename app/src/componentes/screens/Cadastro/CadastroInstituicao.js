@@ -46,19 +46,22 @@ export class CadastroInstituicao extends Component {
             <div>
                 <Header />
                 <div id="container">
-                    <h2>Crie uma nova conta!</h2>
+                    <div id="title-auth-container">
+                        <img id="logo" src="./favicon.png" />
+                        <h2 id="title-auth">Cadastre sua Instituição!</h2>
+                    </div>
                     <br />
-                    <label htmlFor="input-email-signup-instituicao"></label>
-                    <input id="input-email-signup-instituicao" type="text" name="email-signup"
+                    <label htmlFor="input-email-signup-instituicao">Email</label>
+                    <input id="input-email-signup-instituicao" className="form-control" type="text" name="email-signup"
                         value={this.state.email}
                         onChange={this.handleChange} />
 
-                    <label htmlFor="input-email-signup-instituicao"></label>
-                    <input id="input-senha-signup-instituicao" type="password" name="senha-signup"
+                    <label htmlFor="input-email-signup-instituicao">Senha</label>
+                    <input id="input-senha-signup-instituicao" className="form-control" type="password" name="senha-signup"
                         value={this.state.senha}
                         onChange={this.handleChange} />
 
-                    <button className="btEnviar" onClick={this.onSubmit}>Logar</button>
+                    <button className="auth btn btn-success btn-lg btn-block btEnviar" onClick={this.onSubmit}>Cadastro</button>
                 </div>
             </div>
 
