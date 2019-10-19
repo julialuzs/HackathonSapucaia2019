@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import './SignUp.css'
+import './Cadastro.css'
 import { Header } from '../../index'
 import { InstituicaoService } from '../../../services/instituicao.service'
 
-export class SignupInstituicao extends Component {
+export class CadastroInstituicao extends Component {
 
     constructor() {
         super()

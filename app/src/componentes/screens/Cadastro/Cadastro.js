@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import './SignUp.css'
+import './Cadastro.css'
 import { Header } from '../../index'
 
-export class SignUp extends Component {
+export class Cadastro extends Component {
     render() {
         return (
             <div>

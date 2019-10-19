@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Carousel.css'
+import './Carrossel.css'
 
-export class Carousel extends Component {
+export class Carrossel extends Component {
     render(){
       return (
         <div id="carousel-container">

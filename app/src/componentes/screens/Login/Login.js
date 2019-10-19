@@ -3,7 +3,7 @@ import { Header } from '../../index';
 import { AutenticacaoService } from '../../../services/autenticacao.service';
 import { Redirect } from 'react-router-dom';
 
-export class SignIn extends Component {
+export class Login extends Component {
 
     constructor() {
         super()
