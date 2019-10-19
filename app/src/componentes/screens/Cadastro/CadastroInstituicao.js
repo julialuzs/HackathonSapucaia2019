@@ -9,8 +9,11 @@ export class CadastroInstituicao extends Component {
         super()
 
         this.state = {
+            email: '',
             senha: '',
-            email: ''
+            telefone: '',
+            cnpj: '',
+            endereco: ''
         }
 
         this.instituicaoService = new InstituicaoService();
@@ -24,8 +27,18 @@ export class CadastroInstituicao extends Component {
         this.setState({ [name]: value })
     }
 
-    onSubmit() {
-        this.instituicaoService.adicionarInstituicao()
+    onSubmit = (event) => {
+        event.preventDefault();
+        const instituicao = {
+            email: this.state.email,
+            senha: this.state.senha,
+            telefone: this.state.telefone,
+            cnpj: this.state.cnpj,
+            endereco: this.state.endereco
+        }
+        this.instituicaoService.cadastrar(instituicao)
+            .then(() => this.setState({ shouldRedirectToHome: true }))
+
     }
 
     render() {
@@ -37,13 +50,13 @@ export class CadastroInstituicao extends Component {
                     <br />
                     <label htmlFor="input-email-signup-instituicao"></label>
                     <input id="input-email-signup-instituicao" type="text" name="email-signup"
-                    value={this.state.email}
-                    onChange={this.handleChange}/>
+                        value={this.state.email}
+                        onChange={this.handleChange} />
 
                     <label htmlFor="input-email-signup-instituicao"></label>
-                    <input id="input-senha-signup-instituicao" type="password" name="senha-signup" 
-                    value={this.state.senha}
-                    onChange={this.handleChange}/>
+                    <input id="input-senha-signup-instituicao" type="password" name="senha-signup"
+                        value={this.state.senha}
+                        onChange={this.handleChange} />
 
                     <button className="btEnviar" onClick={this.onSubmit}>Logar</button>
                 </div>
