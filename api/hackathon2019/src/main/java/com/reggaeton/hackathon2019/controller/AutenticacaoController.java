@@ -14,12 +14,9 @@ public class AutenticacaoController {
     @Autowired
     private AutenticarUsuarioService autenticarUsuarioService;
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     @ResponseStatus(HttpStatus.OK)
-    public Usuario login(@RequestBody LoginRequest request) {
-
-        String email = request.getEmail();
-        String senha = request.getSenha();
+    public Usuario login(@RequestParam("email") String email, @RequestParam("senha") String senha) {
 
         return autenticarUsuarioService.buscarUsuarioPorEmailESenha(email, senha);
     }

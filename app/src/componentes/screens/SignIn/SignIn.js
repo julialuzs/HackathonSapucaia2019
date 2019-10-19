@@ -32,7 +32,7 @@ export class SignIn extends Component {
             email: this.state.email,
             senha: this.state.senha
         }
-        this.autenticacaoService.logar(loginRequest);
+        this.autenticacaoService.logar(loginRequest).then(() => this.setState({shouldGoToHome: true}));
     }
 
     render() {
