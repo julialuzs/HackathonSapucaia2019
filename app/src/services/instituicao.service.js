@@ -12,4 +12,10 @@ export class InstituicaoService extends BaseService {
         return result.data
     }
 
+    async postar(postagem){
+        const result = await super.post('', postagem)
+        return result.data
+    }
+
+
 }

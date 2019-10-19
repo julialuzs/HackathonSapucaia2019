@@ -12,7 +12,7 @@ public class Curso {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_curso")
-    private long id;
+    private Long id;
 
     @Column(name = "data")
     private LocalDate dataDePostagem;

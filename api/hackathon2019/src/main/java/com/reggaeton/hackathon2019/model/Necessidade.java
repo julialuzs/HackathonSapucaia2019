@@ -11,7 +11,7 @@ public class Necessidade {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_necessidade")
-    private long id;
+    private Long id;
 
     @Column(name = "valor_unitario")
     private double valorUnitario;

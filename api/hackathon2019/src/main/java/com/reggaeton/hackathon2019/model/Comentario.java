@@ -11,7 +11,7 @@ public class Comentario {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id_comentario")
-    private long id;
+    private Long id;
 
     @Column(name = "conteudo_comentario")
     private String conteudo;
@@ -23,8 +23,5 @@ public class Comentario {
     @ManyToOne
     @JoinColumn(name = "id_aula")
     private Aula aula;
-
-    //uma aula possui N comentarios. um comentario pertence a uma aula
-    //um comentario eh feito por um usuario, um usuario faz n comentarios
 
 }
